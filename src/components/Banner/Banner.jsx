@@ -1,4 +1,5 @@
 import hero from '../../assets/img/2ecc1f24-36be-4191-af50-f10f56c39539.jpg'
+
 const Banner = () => {
   return (
     <div className='p-4 space-y-4'>

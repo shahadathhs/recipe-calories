@@ -11,13 +11,15 @@ function App() {
 
   const [cart, setCart] = useState([]);
 
+  const [cookingCart, setCookingCart] = useState([]);
+
   const handleCart = (srecipes) => {
     const isExists = cart.find((psrecipes) => psrecipes.recipe_id == srecipes.recipe_id);
     if (!isExists) {
       setCart([...cart, srecipes]);
-      toast.success("Recipe Added");
+      // toast.success("Recipe Added");
     } else {
-      toast.warn("Recipe already Selected");
+      toast.warn("Recipe Already Added");
     }
   };
 
@@ -30,7 +32,17 @@ function App() {
       });
   }, []);
 
-  console.log(recipes);
+
+  const handleAddRemove = (wantedfood, recipe_id) => {
+    const leftRecipe = cart.filter((cookingRecipe) => cookingRecipe.recipe_id != recipe_id);
+    setCart(leftRecipe);
+
+    const cookingExists = cookingCart.find((cookingrecipes) => cookingrecipes.recipe_id == recipe_id);
+    if (!cookingExists) {
+      setCookingCart([...cookingCart, wantedfood]);
+    }
+    
+  };
 
   return (
     <>
@@ -74,16 +86,38 @@ function App() {
                       <td>{wantedfood.recipe_name.slice(0,25)}</td>
                       <td>{wantedfood.preparing_time}</td>
                       <td>{wantedfood.calories}</td>
-                      <button className='btn btn-primary m-3 bg-green-500 border-none'>Preparing</button>
+                      <td><button onClick={() => handleAddRemove(wantedfood, wantedfood.recipe_id)} className='btn btn-primary m-3 bg-green-500 border-none'>Preparing</button></td>
                     </tr>  
                   </tbody> 
                   ))} 
                 </table>
                 <ToastContainer />
               </div>
+              <div className='divider px-4'></div>
               {/* preparing services */}
               <div>
-
+                <p className='text-2xl text-center font-bold p-3'>Currently cooking: {cookingCart.length}</p>
+                <table className='text-gray-600 w-full'>
+                  <thead>
+                  <tr>
+                    <th></th>
+                    <th>Name</th>
+                    <th>Time</th>
+                    <th>Calories</th>
+                  </tr>
+                  </thead>
+                  {cookingCart.map((wantedfood, index) => (
+                  <tbody key={index}>
+                    <tr className=' bg-gray-200 text-center'>
+                      <th className=' p-4'>{index+1}</th>
+                      <td>{wantedfood.recipe_name.slice(0,25)}</td>
+                      <td>{wantedfood.preparing_time}</td>
+                      <td>{wantedfood.calories}</td>
+                    </tr>  
+                  </tbody> 
+                  ))} 
+                </table>
+                <ToastContainer />
               </div>
           </div>
         </div>

@@ -1,10 +1,8 @@
 import PropTypes from 'prop-types';
 import { IoMdTimer } from "react-icons/io";
 import { FaFire } from "react-icons/fa";
-// import Ingredient from '../Ingredient/Ingredient';
 
 const Recipes = ({recipe, handleCart}) => {
-  // console.log(typeof(handleCart));
   return (
     <div>
       <div className="card bg-base-100 shadow-xl h-[630px] border-2 p-2">
