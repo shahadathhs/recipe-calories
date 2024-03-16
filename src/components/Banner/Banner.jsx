@@ -17,7 +17,7 @@ const Banner = () => {
           </div>
         </div>
       </div>
-      <div className='text-center space-y-2'>
+      <div className='text-center space-y-4 py-4'>
         <h5 className='text-5xl font-extrabold'>Our Recipes</h5>
         <p className=' text-gray-500 font-bold pt-2'>As our restaurant is for international customers, we have recipes from all around the world. Explore our website and fulfill your requirements.</p>
       </div>
