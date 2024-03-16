@@ -3,11 +3,11 @@ import { IoMdTimer } from "react-icons/io";
 import { FaFire } from "react-icons/fa";
 // import Ingredient from '../Ingredient/Ingredient';
 
-const Recipes = ({recipe}) => {
-  // console.log(typeof(recipe))
+const Recipes = ({recipe, handleCart}) => {
+  // console.log(typeof(handleCart));
   return (
     <div>
-      <div className="card bg-base-100 shadow-xl h-[630px]">
+      <div className="card bg-base-100 shadow-xl h-[630px] border-2 p-2">
         <figure className='p-4'><img src={recipe.recipe_image} alt="Shoes" /></figure>
         <div className="card-body">
           <h2 className="card-title">{recipe.recipe_name}</h2>
@@ -28,7 +28,7 @@ const Recipes = ({recipe}) => {
             <p className='flex items-center'><FaFire />{recipe.calories}</p>
           </div>
           <div className="card-actions">
-            <button className="btn btn-primary bg-green-500 border-none text-white">Want to Cook</button>
+            <button onClick={() => handleCart(recipe)} className="btn btn-primary bg-green-500 border-none text-white">Want to Cook</button>
           </div>
         </div>
       </div>
@@ -40,4 +40,5 @@ export default Recipes;
 
 Recipes.propTypes = {
   recipe: PropTypes.object,
+  handleCart: PropTypes.func,
 }
