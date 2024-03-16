@@ -1,4 +1,5 @@
 import { CgProfile } from "react-icons/cg";
+import { CiSearch } from "react-icons/ci";
 
 const Navbar = () => {
   return (
@@ -28,10 +29,15 @@ const Navbar = () => {
         </div>
         {/* navbar end */}
         <div className="navbar-end gap-4">
-          <div className="form-control hidden md:flex lg:flex">
-            <input type="text" placeholder="Search" className="input input-bordered w-24 md:w-auto rounded-full" />
+          <div className="form-control">
+            <div className="flex gap-3">
+              <div className="join hidden md:flex lg:flex">
+                <button className="btn join-item rounded-r-full pr-0 bg-white border-gray-500"><CiSearch /></button>
+                <input className="input input-bordered join-item pl-1 border-l-0 border-gray-500" placeholder="Search"/>
+              </div>
+              <a className="btn rounded-full bg-green-500"><CgProfile /></a>
+            </div>
           </div>
-          <a className="btn rounded-full bg-green-500"><CgProfile /></a>
         </div>
       </div>
     </div>

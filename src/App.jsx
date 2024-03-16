@@ -56,7 +56,7 @@ function App() {
           <div className='col-span-1 md:col-span-1 lg:col-span-3 border-2 rounded-xl'>
               {/* pending services */}
               <div>
-                <p className='text-2xl text-center font-bold p-3'>Want to cook: 01</p>
+                <p className='text-2xl text-center font-bold p-3'>Want to cook: {cart.length}</p>
                 <table className='text-gray-600 w-full'>
                   <thead>
                   <tr>
