@@ -1,0 +1,56 @@
+[
+  {
+    "recipe_id": 1,
+    "recipe_name": "Grilled Salmon with Lemon Herb Sauce",
+    "recipe_image": "https://i.ibb.co/VC8Lr0h/2ecc1f24-36be-4191-af50-f10f56c39539.jpg",
+    "short_description": "Delicious grilled salmon fillets topped with a zesty lemon herb sauce.",
+    "ingredients": ["4 salmon fillets", "2 lemons", "2 cloves garlic", "2 tablespoons olive oil", "1 tablespoon chopped fresh parsley", "Salt and pepper to taste"],
+    "preparing_time": "20 min",
+    "calories": "300 calories"
+  },
+  {
+    "recipe_id": 2,
+    "recipe_name": "Caprese Salad",
+    "recipe_image": "https://i.ibb.co/pP5g4ZH/0a480e7c-59b7-4509-b5f5-d49639fb3a2f.jpg",
+    "short_description": "A classic Italian salad made with fresh tomatoes, mozzarella cheese, and basil leaves.",
+    "ingredients": ["4 large tomatoes", "8 ounces fresh mozzarella cheese", "1/4 cup fresh basil leaves", "2 tablespoons balsamic vinegar", "2 tablespoons olive oil", "Salt and pepper to taste"],
+    "preparing_time": "15 min",
+    "calories": "200 calories"
+  },
+  {
+    "recipe_id": 3,
+    "recipe_name": "Vegetable Stir-Fry",
+    "recipe_image": "https://i.ibb.co/gWb50fc/2605fce4-df68-4127-8f49-980dd7085daa.jpg",
+    "short_description": "A colorful and nutritious stir-fry featuring an assortment of fresh vegetables.",
+    "ingredients": ["2 cups broccoli florets", "1 red bell pepper", "1 yellow bell pepper", "1 carrot", "1 zucchini", "1/4 cup soy sauce"],
+    "preparing_time": "25 min",
+    "calories": "150 calories"
+  },
+  {
+    "recipe_id": 4,
+    "recipe_name": "Chicken Alfredo Pasta",
+    "recipe_image": "https://i.ibb.co/5FQvHvR/af56355a-792c-4aef-81a0-3408a6523070.jpg",
+    "short_description": "Creamy and indulgent pasta dish with tender chicken pieces and rich Alfredo sauce.",
+    "ingredients": ["8 ounces fettuccine pasta", "2 chicken breasts", "2 cups heavy cream", "1 cup grated Parmesan cheese", "2 cloves garlic", "1/4 cup chopped fresh parsley"],
+    "preparing_time": "30 min",
+    "calories": "500 calories"
+  },
+  {
+    "recipe_id": 5,
+    "recipe_name": "Quinoa Salad with Chickpeas",
+    "recipe_image": "https://i.ibb.co/TkLSqy9/340fa8f4-9ddf-48dd-9266-df88acbef685.jpg",
+    "short_description": "Healthy and protein-packed salad featuring quinoa, chickpeas, and fresh vegetables.",
+    "ingredients": ["1 cup quinoa", "1 can chickpeas", "1 cucumber", "1 bell pepper", "1/4 cup chopped fresh cilantro", "Juice of 1 lemon"],
+    "preparing_time": "20 min",
+    "calories": "250 calories"
+  },
+  {
+    "recipe_id": 6,
+    "recipe_name": "Mango Avocado Salsa",
+    "recipe_image": "https://i.ibb.co/4PVzqRN/0c4ba286-5f0f-4aaf-ac34-d401da94ef99.jpg",
+    "short_description": "Refreshing salsa with ripe mangoes, creamy avocados, and zesty lime juice.",
+    "ingredients": ["2 ripe mangoes", "2 avocados", "1 red onion", "1 jalapeno pepper", "1/4 cup chopped fresh cilantro", "Juice of 2 limes"],
+    "preparing_time": "15 min",
+    "calories": "120 calories"
+  }
+]
