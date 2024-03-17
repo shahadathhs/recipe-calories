@@ -40,6 +40,8 @@ function App() {
     const cookingExists = cookingCart.find((cookingrecipes) => cookingrecipes.recipe_id == recipe_id);
     if (!cookingExists) {
       setCookingCart([...cookingCart, wantedfood]);
+    }else{
+      setCookingCart([...cookingCart, wantedfood]);
     }
     
   };
